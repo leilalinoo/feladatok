@@ -12,10 +12,24 @@
 
     <?php
 
-        echo("hello darling")
-        //1. feladat
+    echo ("hello darling");
+    //1. feladat
+    $tomb = [];
+    $also = 1;
+    $felso = 100;
+    echo "<br>";
+    for ($index1 = 0; $index1 < 5; $index1++) {
+        $randomSzam = rand($also, $felso);
+        $tomb[$index1] = $randomSzam;
+        echo ($tomb[$index1] . " ");
+    }
 
-        
+    
+    $osszeg = 0;
+    foreach ($tomb as $ertek) {
+        $osszeg += $ertek;
+    }
+    echo "Összeg: " . $osszeg;
 
 
 
